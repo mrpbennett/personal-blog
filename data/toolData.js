@@ -5,9 +5,9 @@ const coding = [
     description: "Love VSC it's my go to text editor.",
   },
   {
-    name: 'PyCharm',
-    url: 'https://www.jetbrains.com/pycharm',
-    description: 'My go to IDE for when it comes to using just Python.',
+    name: 'LunarVim',
+    url: 'https://www.lunarvim.org/',
+    description: 'Vim is a great skill to have, especially when using Linux',
   },
   {
     name: 'Fira Coda',

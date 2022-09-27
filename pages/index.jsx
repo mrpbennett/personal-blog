@@ -39,10 +39,8 @@ export default function Home({posts}) {
             </Moment>
           </div>
 
-          <div className="">
-            <div className="trunc-md">
-              <ReactMarkdown>{post.fields.content}</ReactMarkdown>
-            </div>
+          <div className="trunc-md">
+            <ReactMarkdown>{post.fields.content}</ReactMarkdown>
           </div>
         </div>
       ))}

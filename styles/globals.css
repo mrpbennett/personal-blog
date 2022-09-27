@@ -10,6 +10,9 @@ code {
   @apply rounded-md bg-gray-200 p-1;
 }
 
+blockquote {
+  @apply text-gray-500;
+}
 .trunc-md {
   max-width: 65ch;
   height: 100px;
