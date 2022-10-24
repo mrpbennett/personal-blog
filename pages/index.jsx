@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import PropTypes from 'prop-types'
-import {Suspense, useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import ReactMarkdown from 'react-markdown'
 import Moment from 'react-moment'
 import Layout from '../layouts/layoutMain'
@@ -21,9 +21,15 @@ Home.propTypes = {
 }
 
 export default function Home({posts}) {
+  const [hasMounted, setHasMounted] = useState(false)
+
   useEffect(() => {
-    getStaticProps()
+    setHasMounted(true)
   }, [])
+
+  if (!hasMounted) {
+    return null
+  }
 
   return (
     <Layout title="Home">
@@ -39,11 +45,9 @@ export default function Home({posts}) {
           </Link>
           <div className="mb-4">
             <span className="text-sm">Published on </span>
-            <Suspense>
-              <Moment format="MMM D, YYYY" className="text-sm">
-                {post.fields.date}
-              </Moment>
-            </Suspense>
+            <Moment format="MMM D, YYYY" className="text-sm">
+              {post.fields.date}
+            </Moment>
           </div>
 
           <div className="trunc-md">

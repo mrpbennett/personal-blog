@@ -13,7 +13,7 @@ const social = [
   },
   {
     name: 'Email',
-    url: 'mailto:pbennett.uk@gmail.com',
+    url: 'mailto:paul@pnfb.uk',
   },
 ]
 
