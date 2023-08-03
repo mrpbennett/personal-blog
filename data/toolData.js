@@ -5,8 +5,8 @@ const coding = [
     description: "Love VSC it's my go to text editor.",
   },
   {
-    name: 'LunarVim',
-    url: 'https://www.lunarvim.org/',
+    name: 'LazyVim',
+    url: 'https://www.lazyvim.org/',
     description: 'Vim is a great skill to have, especially when using Linux',
   },
   {
@@ -18,12 +18,12 @@ const coding = [
 
 const terminal = [
   {
-    name: 'Hyper',
-    url: 'https://hyper.is/',
-    description: 'Moved from iTerm, not as powerful but it is built in JS.',
+    name: 'iTerm2',
+    url: 'https://iterm2.com/',
+    description: 'iTerm 2 just works the way I need.',
   },
   {
-    name: 'Oh My Zsh',
+    name: 'Oh My Zsh / Bash',
     url: 'https://ohmyz.sh/',
     description: 'It just works I also use SpaceShip with it too.',
   },
