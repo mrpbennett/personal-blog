@@ -18,7 +18,7 @@ export default function Layout({children, title = ''}) {
 
       <Header />
 
-      <main className="container prose flex-grow font-mono">{children}</main>
+      <main className="container prose flex-grow">{children}</main>
 
       <Footer />
     </div>
