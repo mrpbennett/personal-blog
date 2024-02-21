@@ -18,6 +18,15 @@ module.exports = {
         'dracula-cyan': '#8BE9FD',
         'dracula-green': '#50FA7B',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            h3: {
+              'margin-bottom': 0,
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

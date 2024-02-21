@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 import {useEffect, useState} from 'react'
-import ReactMarkdown from 'react-markdown'
 import Moment from 'react-moment'
 import Layout from '../layouts/layoutMain'
 import {client} from '../utils/contentful-client'
@@ -33,30 +32,27 @@ export default function Home({posts}) {
 
   return (
     <Layout title="Home">
-      {posts.map(post => (
-        <div key={post.sys.id} className="">
-          <Link
-            href={`/posts/${encodeURIComponent(post.fields.slug)}`}
-            passHref
-          >
-            <div>
-              <h3 className="link not-prose">{post.fields.title}</h3>
-            </div>
-          </Link>
-          <div className="mb-4">
-            <span className="text-sm">Published on </span>
-            <Moment format="MMM D, YYYY" className="text-sm">
-              {post.fields.date}
-            </Moment>
-          </div>
+      <div className="space-y-7">
+        {posts.map(post => (
+          <div key={post.sys.id} className="not-prose">
+            <Link
+              href={`/posts/${encodeURIComponent(post.fields.slug)}`}
+              passHref
+            >
+              <div>
+                <h3 className="link text-lg font-bold">{post.fields.title}</h3>
+              </div>
+            </Link>
 
-          <div className="trunc-md">
-            <ReactMarkdown suppressHydrationWarning={true}>
-              {post.fields.content}
-            </ReactMarkdown>
+            <div>
+              <span className="text-sm">Published on </span>
+              <Moment format="MMM D, YYYY" className="text-sm">
+                {post.fields.date}
+              </Moment>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </Layout>
   )
 }
