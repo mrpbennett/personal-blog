@@ -13,3 +13,7 @@ code {
 blockquote {
   @apply text-gray-500;
 }
+
+body {
+  margin: 1em;
+}
