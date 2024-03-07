@@ -2,6 +2,7 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import Moment from 'react-moment'
+import remarkGfm from 'remark-gfm'
 import Layout from '../../layouts/layoutMain'
 import {client} from '../../utils/contentful-client'
 
@@ -61,7 +62,9 @@ export default function Posts({post}) {
             <h2 className="">{title}</h2>
 
             <p>
-              <ReactMarkdown>{content}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {content}
+              </ReactMarkdown>
             </p>
           </div>
         </div>

@@ -32,7 +32,9 @@ export default function Header() {
     <div className="container navbar bg-base-100">
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">mrpbennett.dev</a>
+          <Link href="/" className="btn btn-ghost text-xl">
+            mrpbennett.dev
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal space-x-8 px-1">
