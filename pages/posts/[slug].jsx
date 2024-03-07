@@ -53,7 +53,7 @@ export default function Posts({post}) {
       </Head>
 
       <div>
-        <div className="">
+        <div className="container prose">
           <div>
             <Moment format="MMMM D,  YYYY" className="">
               {date}

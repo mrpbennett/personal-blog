@@ -3,10 +3,11 @@ import {apps, coding, terminal} from '../data/toolData'
 
 export default function ToolsSection() {
   return (
-    <>
-      <div className="">
-        <div>
-          <h3 className="">Coding</h3>
+    <div className="space-y-4">
+      <div className="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div className="collapse-title text-xl font-medium">Coding</div>
+        <div className="collapse-content">
           <ul className="p-0">
             {coding.map(c => (
               <li key={c.name} className="flex flex-col text-base">
@@ -18,9 +19,11 @@ export default function ToolsSection() {
             ))}
           </ul>
         </div>
-
-        <div>
-          <h3 className="">Terminal</h3>
+      </div>
+      <div className="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div className="collapse-title text-xl font-medium">Terminal</div>
+        <div className="collapse-content">
           <ul className="p-0">
             {terminal.map(t => (
               <li key={t.name} className="flex flex-col text-base">
@@ -32,8 +35,11 @@ export default function ToolsSection() {
             ))}
           </ul>
         </div>
-        <div>
-          <h3 className="">Apps</h3>
+      </div>
+      <div className="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div className="collapse-title text-xl font-medium">Apps</div>
+        <div className="collapse-content">
           <ul className="p-0">
             {apps.map(a => (
               <li key={a.name} className="flex flex-col text-base">
@@ -46,6 +52,6 @@ export default function ToolsSection() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }
