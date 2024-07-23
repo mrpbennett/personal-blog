@@ -39,34 +39,28 @@ export default function About() {
           <h2>Why this blog?</h2>
           <p>
             Welcome to my corner of the digital universe. I&apos;m a remote Lead
-            Solutions Engineer with a deep passion for homelabs, DevOps, and the
-            endless quest for automation. My days are fueled by coffee as I
-            navigate through the complex mazes of YAML, crafting solutions in a
-            wife-approved tech playground. This website, much like my first
-            Linux server, has experienced more reboots and redesigns than I care
-            to admit. However, it&apos;s time to shift focus from aesthetics to
-            substance.
+            Solutions Engineer with a deep passion for databases, SQL, and
+            automation. While my Kubernetes cluster is important, it&apos;s the
+            world of database administration and engineering that truly
+            captivates me. Fueled by coffee, I navigate the complexities of
+            YAML, craft database solutions, and build in a wife-approved tech
+            playground.
           </p>
 
           <p>
-            The purpose of this site has evolved. It&apos;s no longer about
-            showcasing sleek designs but about sharing my journey, discoveries,
-            and the valuable lessons learned along the way. Here, I&apos;ll
-            document useful snippets of code, unravel the mysteries of
-            technology, and offer insights into the tools and practices that
-            power my professional and personal projects.
+            This site has evolved from showcasing sleek designs to sharing my
+            journey, discoveries, and lessons learned. Here, I&apos;ll document
+            code snippets, explore technology, dive into SQL, and share insights
+            on database administration and engineering.
           </p>
 
           <p>
-            Gone are the days of worrying about the site&apos;s appearance. This
-            freedom allows me to truly own my slice of the web, where I can
-            freely document and discuss anything that sparks my interest—though,
-            more often than not, it&apos;s tech-related. Welcome to my digital
-            playground, a space where innovation meets documentation, all served
-            with a side of caffeine.
+            Gone are the days of worrying about the site&apos;s appearance. Now,
+            I focus on content—tech discussions, documentation, and
+            innovation—all served with a side of caffeine. Welcome to my digital
+            playground.
           </p>
         </section>
-
         <section>
           <h2>How to get in contact?</h2>
 
