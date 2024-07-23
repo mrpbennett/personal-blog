@@ -24,9 +24,10 @@ export default function About() {
           <div className="max-w-lg">
             <h1 className="text-5xl font-bold">Hello 👋</h1>
             <p className="prose py-6">
-              Currently a remote Lead Solutions Engineer obsessed with homelabs
-              and DevOps. Coffee-fueled days navigating YAML mazes, automating
-              and innovating in a wife approved tech playground.
+              Currently a remote Lead Solutions Engineer obsessed with
+              databases, SQL, homelabs, and DevOps. Coffee-fueled days
+              navigating YAML mazes, automating, and innovating in a
+              wife-approved tech playground.
             </p>
           </div>
         </div>
