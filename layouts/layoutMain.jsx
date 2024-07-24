@@ -10,7 +10,7 @@ Layout.propTypes = {
 
 export default function Layout({children, title = ''}) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col font-mono">
       <Head>
         <title>{title} &bull; Paul Bennett</title>
         <meta name="description" content="Paul Bennett"></meta>
